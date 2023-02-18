@@ -6,9 +6,13 @@ To make a successful request to our API we require the use of HTTP Basic Authent
 
 When building a request using Basic Authentication, make sure you add the Authentication: Basic HTTP header with encoded credentials over HTTPS.
 
-### Base URL
+### API Host and Base URL
 
-https://ymca360.org/api/external/v1
+Production  `https://ymca360.org/api/external/v1`
+
+Development `https://staging.ymca360.org/api/external/v1`
+
+A well-formed request for the group class schedules would be: `https://ymca360.org/api/external/v1/schedules`
 
 ### Schedules
 
