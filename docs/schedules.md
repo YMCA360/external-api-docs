@@ -1,5 +1,11 @@
 ## Group Class Schedules
 
+The `/schedules` endpoint provides access to group class schedule information.  Results are ordered by `start_at`.
+
+* [Pagination](#pagination)
+* [Filters](#filters)
+* [Facets](#facets)
+
 ### Request
 
 `GET /schedules`
@@ -137,6 +143,102 @@ Pagination information is provide in the summary key of the response.
         "items_per_page": 10,
         "current_page": 0,
         "total_pages": 9,
+        ...
+    }
+}
+```
+
+## Filters
+
+Results can be filtered using the following parameters:
+
+| Parameter | Type | Notes |
+| --- | --- | --- |
+| search | string | Full-text search on title, description, and instructor |
+| assoc_id | Array[integer] | |
+| branch_id | Array[integer] | |
+| studio_id | Array[integer] | |
+| category_id | Array[integer] | |
+| instructor_id | Array[integer] | |
+| event_id | Array[integer] | |
+| program_id | Array[integer] | |
+| kind | Array[string] | |
+| start_at | datetime | Unix Timestamp |
+| end_at | datetime | Unix Timestamp |
+| updated_at | datetime | Unix Timestamp |
+
+Filters that can be specified as an array can be added in two ways:
+* `branch_id=1` will filter results to any classes in branch 1
+* `branch_id[]=1&branch_id[]=2` will filter results to any classes in branch 1 or branch 2
+
+#### Example Request
+
+`GET /schedules?branch_id=1`
+
+This request would return any classes in branch 1
+
+## Facets
+
+Facets are provided in the summary key of the response.  Facets are the available options to the [filters](#filters) above.
+
+```js
+{
+    ...
+    "summary": {
+        "facets": {
+            "studio_ids": [
+                {
+                    "id": 27,
+                    "label": "Studio A"
+                }
+            ],
+            "instructor_ids": [
+                {
+                    "id": 136,
+                    "label": "Kristen D"
+                }
+            ],
+            "assoc_ids": [
+                {
+                    "id": 1,
+                    "label": "YMCA360 Studios"
+                }
+            ],
+            "event_ids": [
+                {
+                    "id": 132,
+                    "label": "Zumba® Fitness"
+                }
+            ],
+            "branch_ids": [
+                {
+                    "id": 1,
+                    "label": "Downtown"
+                }
+            ],
+            "kinds": [
+                {
+                    "id": "In-Person Instructor",
+                    "label": "In-Person Instructor"
+                },
+                {
+                    "id": "InStudio (YMCA360 Virtual Instructor)",
+                    "label": "InStudio (YMCA360 Virtual Instructor)"
+                }
+            ],
+            "category_ids": [
+                {
+                    "id": 2,
+                    "label": "Cardio"
+                }
+            ],
+            "program_ids": [
+                {
+                    "id": 1,
+                    "label": "Zumba® Fitness"
+                }
+            ]
+        }
         ...
     }
 }
