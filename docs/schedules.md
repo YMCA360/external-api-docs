@@ -2,7 +2,7 @@
 
 ### Request
 
-`GET /api/external/v1/schedules`
+`GET /schedules`
 
 ### Successful Response
 
@@ -112,3 +112,33 @@ Status: 401
     "error": "Unauthorized"
 }
 ```
+
+## Pagination
+
+* Page numbers are zero-based
+* Pagination is based on the `items_per_page`. If `items_per_page=10`, then `page=0` will display the items from 1 to 10, `page=1` will display the items from 11 to 20.
+* Pagination is controlled with two params:
+    * `page=1` Specify the page to retrieve
+    * `size=10` Specify the items per page to retrieve
+
+#### Example Request
+
+`GET /schedules?page=1&size=10`
+
+This request would return 10 items per page and the second page of results with items 11-20.
+
+Pagination information is provide in the summary key of the response.
+
+```js
+{
+    ...
+    "summary": {
+        "total_items": 100,
+        "items_per_page": 10,
+        "current_page": 0,
+        "total_pages": 9,
+        ...
+    }
+}
+```
+
