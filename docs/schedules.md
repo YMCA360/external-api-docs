@@ -2,6 +2,7 @@
 
 The `/schedules` endpoint provides access to schedule information.  Results are ordered by `start_at`.
 
+* [Response](#response-fields)
 * [Pagination](#pagination)
 * [Filters](#filters)
 * [Facets](#facets)
