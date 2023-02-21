@@ -1,4 +1,4 @@
-## Group Class Schedules
+## Schedules
 
 The `/schedules` endpoint provides access to group class schedule information.  Results are ordered by `start_at`.
 
