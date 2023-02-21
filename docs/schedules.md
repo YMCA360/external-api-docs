@@ -1,6 +1,6 @@
 ## Schedules
 
-The `/schedules` endpoint provides access to group class schedule information.  Results are ordered by `start_at`.
+The `/schedules` endpoint provides access to schedule information.  Results are ordered by `start_at`.
 
 * [Pagination](#pagination)
 * [Filters](#filters)
