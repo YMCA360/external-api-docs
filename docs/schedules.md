@@ -17,34 +17,34 @@ The `/schedules` endpoint provides access to schedule information.  Results are 
 
 | Field | Type | Notes |
 | --- | --- | --- |
-| id | integer | Unique primary key of the Occurrence |
-| title | text | Program title (ex. Body Blitz) |
-| description | text | Program description (ex. "Slim, trim and strengthen your body using a variety of equipment for both upper and lower body. No cardio involved.") |
-| thumbnail_url | text | Program marketing photo that illustrates the activity |
-| start_at | datetime | Occurrence start time (when instruction begins) |
-| end_at  | datetime | Occurrence end time (when instruction ends) |
-| updated_at | datetime | Last modified date of this occurrence record |
-| get_ready_message | text | InStudio display message before class begins (ex. "Today you'll need a mat and dumbbells") |
-| program_id | integer | ID of the program |
-| event_id | integer | ID of the event |
 | assoc_id | integer | ID of the Association |
 | assoc_name | text | Name of the association (ex. "YMCA of Greater Wichita") |
 | branch_id | integer | Numerical ID of the branch |
 | branch_name | text | Name of the branch (ex. "Ken Shannon Northwest YMCA") |
 | branch_time_zone | text |  |
-| studio_id | integer | Numerical ID of the Studio |
-| studio_name | text | Name of the studio where class will be held (ex. "Studio A") |
-| kind | text | Type of class (ex. InStudio, Livestream, or In-Person) |
-| repeat_freq | text | Display label for frequency this class is scheduled (ex. "Weekly") |
 | category_id | integer | Numerical ID of the program category |
 | category_label | text | Name of the program category (ex. "Cardio") |
-instructor_id | integer | Numerical ID of the instructor (for InStudio and Livestream classes this can be nil) |
+| description | text | Program description (ex. "Slim, trim and strengthen your body using a variety of equipment for both upper and lower body. No cardio involved.") |
+| duration | integer | Duration in seconds |
+| end_at  | datetime | Occurrence end time (when instruction ends) |
+| event_id | integer | ID of the event |
+| get_ready_message | text | InStudio display message before class begins (ex. "Today you'll need a mat and dumbbells") |
+| id | integer | Unique primary key of the Occurrence |
 | instructor_name | text | Display name of the instructor, if a substitute has been approved, then the name of the substitute instructor |
+instructor_id | integer | Numerical ID of the instructor (for InStudio and Livestream classes this can be nil) |
+| kind | text | Type of class (ex. InStudio, Livestream, or In-Person) |
 | original_instructor_id | integer | Numerical ID of the normally scheduled instructor, if a substitute instructor has been approved for this occurrence |
 | original_instructor_name | text | Name of the normally scheduled instructor, if a substitute instructor has been approved for this occurrence |
+| program_id | integer | ID of the program |
+| repeat_freq | text | Display label for frequency this class is scheduled (ex. "Weekly") |
 | schedule_id | integer | ID of the Schedule |
 | schedule_name | text | Name of the schedule, allows for multiple calendars to use the same studio (ex. Group Classes, Facility Usage, Daycare, League Play, etc) |
-| duration | integer | Duration in seconds |
+| start_at | datetime | Occurrence start time (when instruction begins) |
+| studio_id | integer | Numerical ID of the Studio |
+| studio_name | text | Name of the studio where class will be held (ex. "Studio A") |
+| thumbnail_url | text | Program marketing photo that illustrates the activity |
+| title | text | Program title (ex. Body Blitz) |
+| updated_at | datetime | Last modified date of this occurrence record |
 
 ### Successful Response
 
