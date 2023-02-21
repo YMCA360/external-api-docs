@@ -36,10 +36,12 @@ instructor_id | integer | Numerical ID of the instructor (for InStudio and Lives
 | original_instructor_id | integer | Numerical ID of the normally scheduled instructor, if a substitute instructor has been approved for this occurrence |
 | original_instructor_name | text | Name of the normally scheduled instructor, if a substitute instructor has been approved for this occurrence |
 | program_id | integer | ID of the program |
+| published | boolean | Indicates if the occurrence should be displayed |
 | repeat_freq | text | Display label for frequency this class is scheduled (ex. "Weekly") |
 | schedule_id | integer | ID of the Schedule |
 | schedule_name | text | Name of the schedule, allows for multiple calendars to use the same studio (ex. Group Classes, Facility Usage, Daycare, League Play, etc) |
 | start_at | datetime | Occurrence start time (when instruction begins) |
+| status | text | scheduled, moved, canceled, or deleted (may be expanded in the future) |
 | studio_id | integer | Numerical ID of the Studio |
 | studio_name | text | Name of the studio where class will be held (ex. "Studio A") |
 | thumbnail_url | text | Program marketing photo that illustrates the activity |
