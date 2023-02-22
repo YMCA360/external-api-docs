@@ -1,6 +1,6 @@
 ## Schedules
 
-The `/schedules` endpoint provides access to schedule information.  Results are ordered by `start_at`.
+The `/schedules` endpoint provides access to schedule information.  Results are ordered by `start_at` and filtered to `scheduled_after` the current time by default.
 
 * [Request and Response](#request-and-response)
 * [Pagination](#pagination)
