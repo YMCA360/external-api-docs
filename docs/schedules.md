@@ -5,6 +5,7 @@ The `/schedules` endpoint provides access to schedule information.  Results are 
 * [Request and Response](#request-and-response)
 * [Pagination](#pagination)
 * [Filters](#filters)
+* [Sorting](#sorting)
 * [Facets](#facets)
 
 ## Request and Response
@@ -218,6 +219,17 @@ Filters that can be specified as an array can be added in two ways:
 `GET /schedules?branch_id=1`
 
 This request would return any items in branch 1
+
+## Sorting
+
+You can sort items using the `sort_by` parameter, which currently has two options:
+
+* `sort_by=start_at` to sort items chronologically by their start time, from earliest to latest.
+* `sort_by=score` to sort items by their relevance to a search query, with the most relevant items listed first.
+
+The `sort_by=score` option is used in conjunction with the `search` filter. Each item has a `search_score` field that indicates its relevance to the search query.
+
+Results are ordered using `start_at` by default.
 
 ## Facets
 
