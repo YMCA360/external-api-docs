@@ -16,4 +16,4 @@ A well-formed request for the group class schedules would be: `https://ymca360.o
 
 ### Schedules
 
-* [Group Class Schedules](docs/schedules.md) `GET /schedules`
+* [Schedules](docs/schedules.md) `GET /schedules`
