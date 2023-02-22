@@ -26,7 +26,7 @@ The `/schedules` endpoint provides access to schedule information.  Results are 
 | category_label | text | Name of the program category (ex. "Cardio") |
 | description | text | Program description (ex. "Slim, trim and strengthen your body using a variety of equipment for both upper and lower body. No cardio involved.") |
 | duration | integer | Duration in seconds |
-| end_at  | datetime | Occurrence end time (when instruction ends) |
+| end_at  | datetime | Occurrence end time (when instruction ends). In ISO 8601 format. |
 | event_id | integer | ID of the event |
 | get_ready_message | text | InStudio display message before class begins (ex. "Today you'll need a mat and dumbbells") |
 | id | integer | Unique primary key of the Occurrence |
@@ -40,13 +40,13 @@ instructor_id | integer | Numerical ID of the instructor (for InStudio and Lives
 | repeat_freq | text | Display label for frequency this class is scheduled (ex. "Weekly") |
 | schedule_id | integer | ID of the Schedule |
 | schedule_name | text | Name of the schedule, allows for multiple calendars to use the same studio (ex. Group Classes, Facility Usage, Daycare, League Play, etc) |
-| start_at | datetime | Occurrence start time (when instruction begins) |
+| start_at | datetime | Occurrence start time (when instruction begins). In ISO 8601 format. |
 | status | text | scheduled, moved, canceled, or deleted (may be expanded in the future) |
 | studio_id | integer | Numerical ID of the Studio |
 | studio_name | text | Name of the studio where class will be held (ex. "Studio A") |
 | thumbnail_url | text | Program marketing photo that illustrates the activity |
 | title | text | Program title (ex. Body Blitz) |
-| updated_at | datetime | Last modified date of this occurrence record |
+| updated_at | datetime | Last modified date of this occurrence record. In ISO 8601 format. |
 
 ### Successful Response
 
