@@ -210,14 +210,14 @@ Results can be filtered using the following parameters:
 
 
 Filters that can be specified as an array can be added in two ways:
-* `branch_id=1` will filter results to any classes in branch 1
-* `branch_id[]=1&branch_id[]=2` will filter results to any classes in branch 1 or branch 2
+* `branch_id=1` will filter results to any items in branch 1
+* `branch_id[]=1&branch_id[]=2` will filter results to any items in branch 1 or branch 2
 
 #### Example Request
 
 `GET /schedules?branch_id=1`
 
-This request would return any classes in branch 1
+This request would return any items in branch 1
 
 ## Facets
 
