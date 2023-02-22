@@ -192,20 +192,22 @@ Pagination information is provide in the summary key of the response.
 
 Results can be filtered using the following parameters:
 
-| Parameter | Type | Notes |
-| --- | --- | --- |
-| search | string | Full-text search on title, description, and instructor |
-| assoc_id | Array[integer] | |
-| branch_id | Array[integer] | |
-| studio_id | Array[integer] | |
-| category_id | Array[integer] | |
-| instructor_id | Array[integer] | |
-| event_id | Array[integer] | |
-| program_id | Array[integer] | |
-| kind | Array[string] | |
-| start_at | datetime | Unix Timestamp |
-| end_at | datetime | Unix Timestamp |
-| updated_at | datetime | Unix Timestamp |
+| Parameter | Type | Default | Notes |
+| --- | --- | --- | --- |
+| start_at | integer | | An integer value representing the earliest Unix timestamp to include in the results. Items that start at or after this timestamp will be included in the response. |
+| end_at | integer | | An integer value representing the latest Unix timestamp to include in the results. Items that end before this timestamp will be included in the response. |
+| scheduled_from | integer | current Unix timestamp | An integer value representing the earliest Unix timestamp to include in the results. Items that are scheduled after this timestamp will be included in the response. This includes items currently in progress. |
+| updated_at | integer | | An integer value representing the earliest Unix timestamp to include in the results. Items that have been updated at or after this timestamp will be included in the response. |
+| assoc_id | integer or Array[integer] | | A single association ID or an array of association IDs to filter by |
+| branch_id | integer or Array[integer] | | A single branch ID or an array of branch IDs to filter by |
+| category_id | integer or Array[integer] | | A single category ID or an array of category IDs to filter by |
+| event_id | integer or Array[integer] | | A single event ID or an array of event IDs to filter by |
+| instructor_id | integer or Array[integer] | | A single instructor ID or an array of instructor IDs to filter by |
+| kind | string or Array[string] | | A single item type or an array of item types to filter by |
+| program_id | integer or Array[integer] | | A single program ID or an array of program IDs to filter by |
+| studio_id | integer or Array[integer] | | A single studio ID or an array of studio IDs to filter by |
+| search | string | | A full-text search query on title, description, and instructor |
+
 
 Filters that can be specified as an array can be added in two ways:
 * `branch_id=1` will filter results to any classes in branch 1
