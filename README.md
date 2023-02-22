@@ -12,7 +12,7 @@ Production  `https://ymca360.org/api/external/v1`
 
 Development `https://staging.ymca360.org/api/external/v1`
 
-A well-formed request for the group class schedules would be: `https://ymca360.org/api/external/v1/schedules`
+A well-formed request for the schedules would be: `https://ymca360.org/api/external/v1/schedules`
 
 ### Schedules
 
