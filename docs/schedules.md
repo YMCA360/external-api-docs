@@ -79,6 +79,8 @@ Status: 200
             "branch_time_zone": "Central Time (US & Canada)",
             "studio_id": 22,
             "studio_name": "Multipurpose Room",
+            "studio_id": 1,
+            "studio_name": "Group Fitness",
             "kind": "InStudio (YMCA360 Virtual Instructor)",
             "repeat_freq": "Every Week",
             "category_id": 9,
