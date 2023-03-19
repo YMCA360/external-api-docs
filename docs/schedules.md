@@ -48,6 +48,10 @@ instructor_id | integer | Numerical ID of the instructor (for InStudio and Lives
 | thumbnail_url | text | Program marketing photo that illustrates the activity |
 | title | text | Program title (ex. Body Blitz) |
 | updated_at | datetime | Last modified date of this occurrence record. In ISO 8601 format. |
+| registration_url | text |  |
+| min_age | integer |  |
+| max_age | integer |  |
+| wait_list_availability | integer |  |
 
 ### Successful Response
 
@@ -89,6 +93,10 @@ Status: 200
             "instructor_name": "Linda",
             "original_instructor_id": null,
             "original_instructor_name": null,
+            "registration_url": null,
+            "min_age": null,
+            "max_age": null,
+            "wait_list_availability": 0,
             "search_score": 15.138014
         }
     ],
