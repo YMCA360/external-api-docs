@@ -221,7 +221,8 @@ Results can be filtered using the following parameters:
 | program_id | integer or Array[integer] | | A single program ID or an array of program IDs to filter by |
 | studio_id | integer or Array[integer] | | A single studio ID or an array of studio IDs to filter by |
 | search | string | | A full-text search query on title, description, and instructor |
-
+| status | string or Array[string] | | A single status or an array of statuses to filter by |
+| published | string | | Filter by published flag accepted values are `true` or `false` |
 
 Filters that can be specified as an array can be added in two ways:
 * `branch_id=1` will filter results to any items in branch 1
