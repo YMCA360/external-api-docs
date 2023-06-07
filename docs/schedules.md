@@ -22,7 +22,7 @@ The `/schedules` endpoint provides access to schedule information.  Results are 
 | assoc_name | text | Name of the association (ex. "YMCA of Greater Wichita") |
 | branch_id | integer | Numerical ID of the branch |
 | branch_name | text | Name of the branch (ex. "Ken Shannon Northwest YMCA") |
-| branch_time_zone | text |  |
+| ~~branch_time_zone~~ | text | *deprecated 6/7/23* |
 | category_id | integer | Numerical ID of the program category |
 | category_label | text | Name of the program category (ex. "Cardio") |
 | description | text | Program description (ex. "Slim, trim and strengthen your body using a variety of equipment for both upper and lower body. No cardio involved.") |
