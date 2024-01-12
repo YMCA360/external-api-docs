@@ -10,6 +10,8 @@ The `/schedules` endpoint provides access to schedule information.  Results are 
 
 ## Request and Response
 
+> **_IMPORTANT:_** The API returns _deleted_ and _canceled_ classes by default. This is to allow end users to take any action needed to inform members as needed. At minimum the status field should be used to filter these clases out of the final schedule display.
+
 ### Request
 
 `GET /schedules`
