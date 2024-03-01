@@ -54,6 +54,7 @@ instructor_id | integer | Numerical ID of the instructor (for InStudio and Lives
 | min_age | integer |  |
 | max_age | integer |  |
 | wait_list_availability | integer |  |
+| source_assoc_name | text | Name of the association where this content is sourced/produced. Mainly used for live streams to show which association created the live stream |
 
 ### Successful Response
 
