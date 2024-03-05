@@ -50,7 +50,7 @@ instructor_id | integer | Numerical ID of the instructor (for InStudio and Lives
 | thumbnail_url | text | Program marketing photo that illustrates the activity |
 | title | text | Program title (ex. Body Blitz) |
 | updated_at | datetime | Last modified date of this occurrence record. In ISO 8601 format. |
-| registration_url | text |  |
+| registration_url | text | URL for members to make class reservations, if class requires reservations |
 | min_age | integer |  |
 | max_age | integer |  |
 | wait_list_availability | integer |  |
