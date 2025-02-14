@@ -223,6 +223,7 @@ Results can be filtered using the following parameters:
 | kind | string or Array[string] | | A single item type or an array of item types to filter by |
 | program_id | integer or Array[integer] | | A single program ID or an array of program IDs to filter by |
 | studio_id | integer or Array[integer] | | A single studio ID or an array of studio IDs to filter by |
+| schedule_id | integer or Array[integer] | | A single schedule ID or an array of schedule IDs to filter by |
 | search | string | | A full-text search query on title, description, and instructor |
 | status | string or Array[string] | | A single status or an array of statuses to filter by. accepted values are `scheduled`, `moved`, `canceled`, or `deleted` |
 | published | string | | Filter by published flag accepted values are `true` or `false` |
